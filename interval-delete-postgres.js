@@ -38,7 +38,7 @@ async function deleteOldVisitors() {
 pool.connect()
     .then(() => {
         console.log('connected to Postgres on port: 5432');
-        cron.schedule('0 0 * * *', async () => {
+        cron.schedule('0 0 * * 6', async () => {
             try {
                 await deleteOldVisitors();
                 console.log('Successfully deleted old visitors');
