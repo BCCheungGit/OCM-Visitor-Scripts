@@ -50,6 +50,7 @@ pool.connect()
     })
     .catch((err) => {
         console.error('connection error', err.stack);
-    })
+})
+
 
 
